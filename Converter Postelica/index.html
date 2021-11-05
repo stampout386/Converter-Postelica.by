@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Конвертер</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="/img/postelica.png" alt="logo" class='logo'>
+        </div>
+        <div>
+            <h3>Конвертер артикулов Lilia.bel</h3>
+        </div>
+    </header>
+    <nav>
+        <div className="navbuttons">
+            <button class="btnnav save">Сохранить</button>
+            <button class="btnnav winprint">На печать</button>
+            <button class="btnnav clear">Очистить</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="table-head">
+            <h4 class="headtbl">Артикул Postelica</h4>
+            <h4 class="headtbl">Наименование</h4>
+            <h4 class="headtbl">Цвет</h4>
+            <h4 class="headtbl">Размер</h4>
+            <h4 class="headtbl">Артикул Лилия.бел</h4>
+            <h4 class="headtbl">Цена</h4>
+            <h4 class="headtbl">НДС</h4>
+            <h4 class="headtbl">Добавить</h4>
+        </div>
+        <div class="allString">
+            <div class="string">
+                <div class="stringpart">
+                    <input type="text" class="in1">
+                </div>
+                <output class="name stringpart"></output>
+                <div class="stringpart">
+                    <select class="color"></select>
+                </div>
+                <div class="stringpart">
+                    <select class="size"></select>
+                </div>
+                <output class="article stringpart"></output>
+                <output class="price stringpart"></output>
+                <output class="nds stringpart"></output>
+                <div class="stringpart">
+                    <button class="add">
+                        <img src="/img/plus.png" alt="" class="btnadd">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="print-container">
+        <h3 class="doc">Заявка</h3>
+        <div class="table-head">
+            <h4 class="headtbl">Артикул</h4>
+            <h4 class="headtbl">Наименование</h4>
+            <h4 class="headtbl">Цвет</h4>
+            <h4 class="headtbl">Размер</h4>
+            <h4 class="headtbl">Количество</h4>
+            <h4 class="headtbl">Цена</h4>
+            <h4 class="headtbl">НДС</h4>
+            <h4 class="headtbl">Удалить/Добавить</h4>
+        </div>
+        <div class="print"></div>
+        <div class="total"></div>
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="footer-bottom">
+            <div>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h1 class="footer-title">
+                            <a href="https://postelica.by">2021 &copy; Postelica.by</a>
+                        </h1>
+                        <p class="footer-p">Все права защищены</p>
+                    </div>
+                    <div class="flex-item">
+                        <div class="module-body">
+                            <ul class="list-unstyled">
+                                <li class="save">Сохранить</li>
+                                <li class="winprint">На печать</li>
+                                <li class="clear">Очистить</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="module-body">
+                            <ul class="list-unstyled">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <ul class="link"></ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
